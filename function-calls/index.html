@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="addsagar()">Add Sagar</button>
+    <button onclick="addrafia()">Add Rafia</button>
+    
+    <button onclick="addboth()">Add Both</button>
+
+    <div id="content-div">Content</div>
+
+
+    <script>
+        function addsagar(){
+            // creating a reference of an element(in this case its div)
+            let div = document.getElementById(`content-div`);
+
+            //div.style.color='red'
+            div.innerHTML = div.innerHTML + `<div>Sagar</div>` //in this line we can change whatever we want for e.g span, img,video,table etc
+
+        }
+        function addrafia(){
+            let div = document.getElementById(`content-div`);
+            div.innerHTML = div.innerHTML + `<div>Rafia</div>`
+
+        }
+        function addboth(){
+            addsagar();
+            addrafia();
+        }
+
+
+    </script>
+</body>
+</html>

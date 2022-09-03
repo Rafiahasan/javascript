@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 50px;
+            width: 100px;
+            background-color: aqua;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="qstn" placeholder="Enter Question"><br><br>
+    <input type="text" id="answr" placeholder="Enter Answer"><br><br>
+    <button onclick="addSomething()">Add</button><br><br>
+    <div id="container"></div>
+    <script>
+        function addSomething(){
+            let qstnInput = document.getElementById(`qstn`)
+            let div = document.getElementById(`container`)
+            div = qstnInput.value;
+            let qstnanswr
+            
+             let answrInput = document.getElementById(`answr`)
+             let div1 =document.getElementById(`container`)
+             qstnanswr = answrInput.value;
+             div1.innerHTML = div1.innerHTML +   '<div class="box">' + div + '<br>' + qstnanswr +'</div>';
+            
+
+             
+
+        }
+    </script>
+</body>
+</html>

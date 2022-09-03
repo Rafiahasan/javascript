@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            border: 1px solid grey;
+            height: 150px;
+            overflow: hidden;
+
+
+        }
+
+        .margin {
+            margin-left: 10px;
+        }
+
+        .border {
+            border: none;
+        }
+
+        button:hover {
+            background-color: inherit;
+            border-bottom: 1px solid gray;
+        }
+        button{
+            background-color: rgb(247, 244, 244);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container"><br>
+        <button class="margin border" onclick="callTab1()">Tab 1</button>
+        <button class="border" onclick="callTab2()">Tab 2</button>
+        <button class="border" onclick="callTab3()">Tab 3</button><br><br>
+        <div id="div-1" class="margin">
+
+        </div>
+
+
+
+    </div>
+    <script>
+        let tab = document.getElementById(`div-1`)
+        tab.innerHTML = `Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1<br>
+            Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1<br>
+            Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1<br>
+            Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1<br>`
+        function callTab1() {
+            let tab1 = document.getElementById(`div-1`)
+            tab1.innerHTML = `Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1<br>
+            Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1<br>
+            Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1<br>
+            Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1<br>`
+            
+        }
+        function callTab2() {
+            let tab2 = document.getElementById(`div-1`)
+            tab2.innerHTML = `Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2<br>
+            Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2<br>
+            Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2<br>
+            Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2<br>`
+        }
+        function callTab3() {
+            let tab3 = document.getElementById(`div-1`)
+            tab3.innerHTML = `Tab 3 Tab 3 Tab 3 Tab 3 Tab 3 Tab 3 Tab 3<br>
+            Tab 3 Tab 3 Tab 3 Tab 3 Tab 3 Tab 3 Tab 3<br>
+            Tab 3 Tab 3 Tab 3 Tab 3 Tab 3 Tab 3 Tab 3<br>
+            Tab 3 Tab 3 Tab 3 Tab 3 Tab 3 Tab 3 Tab 3<br>`
+
+
+
+
+        }
+    </script>
+</body>
+
+</html>

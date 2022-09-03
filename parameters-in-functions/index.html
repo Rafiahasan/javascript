@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        <button onclick="addName('Rafia')">Add Rafia</button>
+        <button onclick="addName('Pooja')">Add Pooja</button>
+        <button onclick="addName('Goldi')">Add Goldi</button>
+        <button onclick="addName('Aakash')">Add Aakash</button>
+        <button onclick="addName('Abhishek')">Add Abhishek</button>
+        <div id = "output"></div>
+        <script>
+            function addName(whateverTheValue){
+                let div = document.getElementById(`output`)
+                // not so good way
+                // div.innerHTML = div.innerHTML + `<div>rafia</div>`
+
+                // a good way
+                div.innerHTML = div.innerHTML + `<div>` + whateverTheValue + `</div>`
+            }
+
+        </script>
+    
+</body>
+</html>
